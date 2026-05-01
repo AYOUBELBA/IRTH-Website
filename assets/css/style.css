@@ -1,7 +1,9 @@
 html, body {
     margin: 0;
     height: 100%;
+    scroll-behavior: smooth;
 }
+
 
 /*LOADING CSS*/
 .loading{
@@ -25,7 +27,7 @@ html, body {
 .loading-content{
     height: 130px;
     width: 130px;
-    background-image: url(../img/26972343432.png);
+    background-image: url(../img/IRTH-LOGO.png);
     background-size: contain;
 }
 /*NAV*/
@@ -35,7 +37,11 @@ html, body {
     position: fixed;
     z-index: 1;
 }
-.nav img{
+.nav.scrolled {
+  background-color: rgba(24, 80, 202, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.logo{
     height: 80px;
     width: 80px;
     margin-top: 10px;
@@ -83,4 +89,26 @@ html, body {
     right: 0;
     bottom: 0;
     background-color: rgba(34, 59, 173, 0.4); 
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 1rem;
+}
+.home img{
+    height: 250px;
+    width: 250px;
+    margin-right: 60px;
+}
+.home h1{
+    padding-left: 100px;
+    color: rgb(255, 255, 0);
+    font-size: 60px;
+}
+.home p{
+    padding-left: 100px;
+    color: white;
+    font-size: 30px;
 }

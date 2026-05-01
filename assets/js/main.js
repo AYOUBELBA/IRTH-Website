@@ -1,3 +1,4 @@
+// Loading Screen
 window.addEventListener('load', function() {
     setTimeout(() => {
         const loadingscreen = document.getElementById('loading');
@@ -8,4 +9,14 @@ window.addEventListener('load', function() {
         });
     }, 500);
 
+});
+//Nav bar
+window.addEventListener('scroll', function() {
+  const nav = document.querySelector('.nav');
+
+  if (window.scrollY > 50) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
 });
