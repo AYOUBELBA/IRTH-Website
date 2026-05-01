@@ -1,0 +1,25 @@
+/*LOADING CSS*/
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #161515;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out, visibility 0.5s;
+}
+.loading.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.loading-content{
+    height: 130px;
+    width: 130px;
+    background-image: url(../img/26972343432.png);
+    background-size: contain;
+}
